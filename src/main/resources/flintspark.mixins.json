@@ -1,0 +1,16 @@
+{
+  "required": true,
+  "package": "com.evandev.flintspark.common.mixin",
+  "compatibilityLevel": "JAVA_21",
+  "refmap": "flintspark.refmap.json",
+  "mixins": [
+   
+  ],
+  "client": [
+
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "minVersion": "0.8"
+}
