@@ -1,38 +1,52 @@
-modLoader="javafml"
-loaderVersion="${loader_version_range}"
+modLoader = "javafml"
+loaderVersion = "${loader_version_range}"
 
-license="${mod_license}"
-issueTrackerURL="https://github.com/evanbones/Flintspark/issues"
+license = "${mod_license}"
+issueTrackerURL = "https://github.com/evanbones/Flintspark/issues"
 
 [[mods]]
-modId="${mod_id}"
-version="${mod_version}"
-displayName="${mod_name}"
-logoFile="${mod_id}.png"
+modId = "${mod_id}"
+version = "${mod_version}"
+displayName = "${mod_name}"
+logoFile = "${mod_id}.png"
 #credits=""
-authors="${mod_authors}"
-description='''${mod_description}'''
+authors = "${mod_authors}"
+description = '''${mod_description}'''
 
 [[mixins]]
-config="${mod_id}.mixins.json"
+config = "${mod_id}.mixins.json"
 
 [[dependencies."${mod_id}"]]
-    modId="neoforge"
-    type="required"
-    versionRange="${neo_version_range}"
-    ordering="AFTER"
-    side="BOTH"
+modId = "neoforge"
+type = "required"
+versionRange = "${neo_version_range}"
+ordering = "AFTER"
+side = "BOTH"
 
 [[dependencies."${mod_id}"]]
-    modId="minecraft"
-    type="required"
-    versionRange="${minecraft_version_range}"
-    ordering="AFTER"
-    side="BOTH"
+modId = "minecraft"
+type = "required"
+versionRange = "${minecraft_version_range}"
+ordering = "AFTER"
+side = "BOTH"
 
 [[dependencies."${mod_id}"]]
-    modId="biolith"
-    type="required"
-    versionRange="${bt_version_range}"
-    ordering="AFTER"
-    side="BOTH"
+modId = "biolith"
+type = "required"
+versionRange = "${bt_version_range}"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."${mod_id}"]]
+modId = "nomansland"
+type = "required"
+versionRange = "[1.4.0,)"
+ordering = "AFTER"
+side = "BOTH"
+
+[[dependencies."${mod_id}"]]
+modId = "cobblemon"
+type = "required"
+versionRange = "[1.7.0,)"
+ordering = "AFTER"
+side = "BOTH"
