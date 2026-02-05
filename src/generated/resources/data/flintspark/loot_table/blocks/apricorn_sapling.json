@@ -11,7 +11,7 @@
       "entries": [
         {
           "type": "minecraft:item",
-          "name": "minecraft:air"
+          "name": "flintspark:apricorn_sapling"
         }
       ],
       "rolls": 1.0

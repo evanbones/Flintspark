@@ -1,10 +1,7 @@
 package com.evandev.flintspark.datagen;
 
 import com.evandev.flintspark.Flintspark;
-import com.evandev.flintspark.datagen.provider.ModBlockStateProvider;
-import com.evandev.flintspark.datagen.provider.ModItemModelProvider;
-import com.evandev.flintspark.datagen.provider.ModLootTableProvider;
-import com.evandev.flintspark.datagen.provider.ModWorldGenProvider;
+import com.evandev.flintspark.datagen.provider.*;
 import net.minecraft.core.HolderLookup;
 import net.minecraft.data.DataGenerator;
 import net.minecraft.data.PackOutput;
@@ -29,5 +26,6 @@ public class DataGenerators {
         generator.addProvider(event.includeClient(), new ModItemModelProvider(packOutput, existingFileHelper));
         generator.addProvider(event.includeServer(), new ModLootTableProvider(packOutput, lookupProvider));
         generator.addProvider(event.includeServer(), new ModWorldGenProvider(packOutput, lookupProvider));
+        generator.addProvider(event.includeServer(), new ModBlockTagProvider(packOutput, lookupProvider, existingFileHelper));
     }
 }
